@@ -1,7 +1,24 @@
 //battleship.cpp
-//Rigoberto Valadez Mena
-//A01154892
-//10/25/17
+//Rigoberto Valadez Mena - Gerardo Elizondo
+//A01154892 -
+//10/21/17
+
+/*
+ Analysis:
+ For this game we need to be able to play against the computer. To be able to play with the computer we will need different grids, one for the user to play the ships, one for the computer to place the ships,
+ another one for the user to see the shots he misses and he hits, and finally a 4th grid for the computer to see his misses and hits. We should make this grids user friendly by being easy to identify the
+ positions in it, thats why we will use initials to identify the positions missed and the positions with hits. For the user to put the coordinates easier of his boats or his shots the grid will be labeled with
+ letters from A to J for columns and numbers from 1 to 10. For the user to place his ships in the game a message should be displayed, starting with the biggest boat and going down until the smallest, for every place
+ where the boat will be placed a Z will appear, same for the grid of the computer. Since the computer should have intelligence and place his boats randomly we will divide the grid into 5 different parts for the 5 boats
+ and limit the places where the computer can place his boats, we should also use a random function for the computer to place randomly the boats in the selected area and not letting it place anything outside the grid.
+ The boundaries we put for each division of the grid where the computer will help to eliminate the possibility of boats overlapping over each other.
+ When the game starts a message should be displayed for him to know it is his turn and after he shoots it will be the computers turn. The computer will only shot at places different from where it already shot before.
+ The game will be summing "points" with each X or hit the user or the computer makes and when someone sums up 17 points (17 Xs) a message will be displayed of the Winner.
+ Inputs: Will be the entering of the ships and the shots of the user
+ Process: Will be mainly all explained before, the transformation from . to a letter depending if the user or computer hits or misses his shot. As well as the process of the shot of the computer and it having some intelligence
+ when shooting and placing its boats.
+ Outputs: The letters on the grid when the user misses or hits and the messages of who's turn it is. Also at the end the winner will be displayed.
+ */
 #include <iostream>
 #include <cstdlib>
 #include <stdlib.h>
